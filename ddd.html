@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lufta Customer Reviews</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+.bg-maroon {
+    background-color: #a01a3a;
+}
+
+.logo {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 2rem;
+    color: #ffd700; /* yellow */
+    font-weight: 900;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 500;
+    margin-right: 1.5rem;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 700;
+}
+
+.icons a {
+    text-decoration: none;
+}
+
+/* Wave shape below header */
+.wave {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    height: 100px;
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="%23a01a3a" fill-opacity="1" d="M0,64L24,85.3C48,107,96,149,144,149.3C192,149,240,107,288,106.7C336,107,384,149,432,149.3C480,149,528,107,576,90.7C624,75,672,85,720,96C768,107,816,117,864,117.3C912,117,960,107,1008,101.3C1056,96,1104,96,1152,112C1200,128,1248,160,1296,176C1344,192,1392,192,1416,192L1440,192L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"/></svg>') no-repeat bottom;
+    background-size: cover;
+}
+
+/* Wave bottom - simple pink waves for footer */
+.wave-bottom {
+    height: 80px;
+    background: linear-gradient(45deg, #a01a3a90, #c87a9070);
+    clip-path: polygon(
+        0 0,
+        100% 10%,
+        100% 90%,
+        0 100%
+    );
+}
+
+/* Review card styles */
+.review-card {
+    background-color: #f9f9f9;
+    box-shadow: none;
+    border-radius: 20px;
+    min-height: 220px;
+}
+
+.stars i {
+    color: #f9d71c;
+    margin: 0 4px;
+}
+
+.quote-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f9d71c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    right: 20px;
+}
+
+.review-card hr {
+    border-color: #ddd;
+    margin: 0.5rem 0 1rem;
+}
+
+.review-card img {
+    object-fit: cover;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+    .navbar-nav {
+        margin-top: 1rem;
+    }
+
+    .icons {
+        margin-left: auto;
+    }
+}
+</style>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-maroon position-relative">
+        <div class="container">
+            <a class="navbar-brand mx-auto logo" href="#">lufta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Catalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Track Your Order</a></li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center gap-3 icons">
+                <a href="#" class="text-white fs-5"><i class="fas fa-search"></i></a>
+                <a href="#" class="text-white fs-5"><i class="fas fa-user"></i></a>
+                <a href="#" class="text-white fs-5"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+        <div class="wave"></div>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center fw-bold mb-5">What our Customers are Saying</h1>
+
+        <div class="row gy-4">
+            <!-- Review Card -->
+            <div class="col-md-4">
+                <div class="review-card p-4 rounded-3 position-relative">
+                    <div class="stars text-center mb-1">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h5 class="fw-bold text-center mb-3">Great for Gifting</h5>
+                    <p class="text-center text-secondary mb-4">
+                        The box arrived clean and intact. Looked elegant on the table.
+                    </p>
+                    <hr />
+                    <div class="d-flex align-items-center gap-2 mt-3">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ananya Joseph"
+                            class="rounded-circle" width="32" height="32" />
+                        <span>Ananya Joseph</span>
+                    </div>
+                    <div class="quote-icon position-absolute top-0 end-0 bg-yellow text-center">
+                        <i class="fas fa-quote-right fs-4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="review-card p-4 rounded-3 position-relative">
+                    <div class="stars text-center mb-1">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <h5 class="fw-bold text-center mb-3">Perfectly Sweet</h5>
+                    <p class="text-center text-secondary mb-4">
+                        Soft, milky Kalakand with a clean, creamy finish gift-ready packaging.
+                    </p>
+                    <hr />
+                    <div class="d-flex align-items-center gap-2 mt-3">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Nibil Krishna"
+                            class="rounded-circle" width="32" height="32" />
+                        <span>Nibil Krishna</span>
+                    </div>
+                    <div class="quote-icon position-absolute top-0 end-0 bg-yellow text-center">
+                        <i class="fas fa-quote-right fs-4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="review-card p-4 rounded-3 position-relative">
+                    <div class="stars text-center mb-1">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="fw-bold text-center mb-3">Exactly What I Wanted</h5>
+                    <p class="text-center text-secondary mb-4">
+                        I like this flavour the most and ordered it again. It's so sweet, must try item.
+                    </p>
+                    <hr />
+                    <div class="d-flex align-items-center gap-2 mt-3">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Mujeeb Rahman"
+                            class="rounded-circle" width="32" height="32" />
+                        <span>Mujeeb Rahman</span>
+                    </div>
+                    <div class="quote-icon position-absolute top-0 end-0 bg-yellow text-center">
+                        <i class="fas fa-quote-right fs-4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="review-card p-4 rounded-3 position-relative">
+                    <div class="stars text-center mb-1">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="fw-bold text-center mb-3">Must Try Kalakand</h5>
+                    <p class="text-center text-secondary mb-4">
+                        Soft granular body with gentle saffron notes. A clear winner.
+                    </p>
+                    <hr />
+                    <div class="d-flex align-items-center gap-2 mt-3">
+                        <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Fathima Rahman"
+                            class="rounded-circle" width="32" height="32" />
+                        <span>Fathima Rahman</span>
+                    </div>
+                    <div class="quote-icon position-absolute top-0 end-0 bg-yellow text-center">
+                        <i class="fas fa-quote-right fs-4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="review-card p-4 rounded-3 position-relative">
+                    <div class="stars text-center mb-1">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="fw-bold text-center mb-3">Family Approved</h5>
+                    <p class="text-center text-secondary mb-4">
+                        Sent this to my relatives and they loved it. Simple and delightful.
+                    </p>
+                    <hr />
+                    <div class="d-flex align-items-center gap-2 mt-3">
+                        <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="Naved Ali CK"
+                            class="rounded-circle" width="32" height="32" />
+                        <span>Naved Ali CK</span>
+                    </div>
+                    <div class="quote-icon position-absolute top-0 end-0 bg-yellow text-center">
+                        <i class="fas fa-quote-right fs-4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="review-card p-4 rounded-3 position-relative">
+                    <div class="stars text-center mb-1">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="fw-bold text-center mb-3">Premium Taste</h5>
+                    <p class="text-center text-secondary mb-4">
+                        Creamy texture with a clean finish. The presentation feels upscale.
+                    </p>
+                    <hr />
+                    <div class="d-flex align-items-center gap-2 mt-3">
+                        <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Adil Nasar"
+                            class="rounded-circle" width="32" height="32" />
+                        <span>Adil Nasar</span>
+                    </div>
+                    <div class="quote-icon position-absolute top-0 end-0 bg-yellow text-center">
+                        <i class="fas fa-quote-right fs-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="wave-bottom"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

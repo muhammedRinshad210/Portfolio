@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Python Works</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f8f9fa;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .work-section {
+      padding: 60px 0;
+    }
+
+    .work-card {
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .work-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .work-img {
+      border-radius: 10px;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .work-desc {
+      text-align: center;
+      font-size: 15px;
+      margin-top: 8px;
+      color: #333;
+    }
+
+    .modal-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container work-section">
+  <h2 class="text-center mb-5">My mysql Works</h2>
+
+  <div class="row g-4">
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal1">
+        <img src="images/mysqlimg/1.png" class="work-img" alt="Python Project 1">
+        <p class="work-desc">Add, Subtract, Count & View Creation</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal2">
+        <img src="images/mysqlimg/2.png" class="work-img" alt="Python Project 2">
+        <p class="work-desc">Create Database</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal3">
+        <img src="images/mysqlimg/3.png" class="work-img" alt="Python Project 3">
+        <p class="work-desc">Use Database</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal4">
+        <img src="images/mysqlimg/4.png" class="work-img" alt="Python Project 4">
+        <p class="work-desc">Create Table</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal5">
+        <img src="images/mysqlimg/5.png" class="work-img" alt="Python Project 5">
+        <p class="work-desc">Insert Data into Table</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal6">
+        <img src="images/mysqlimg/6.png" class="work-img" alt="Python Project 6">
+        <p class="work-desc">Table Constraints (PK, FK, CHECK)</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal7">
+        <img src="images/mysqlimg/7.png" class="work-img" alt="Python Project 7">
+        <p class="work-desc">SQL Arithmetic Operations (Add, Subtract, Multiply, Divide)</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal8">
+        <img src="images/mysqlimg/8.png" class="work-img" alt="Python Project 8">
+        <p class="work-desc">SQL Aggregate Functions (COUNT, SUM, AVG, MIN, MAX)</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal9">
+        <img src="images/mysqlimg/9.png" class="work-img" alt="Python Project 9">
+        <p class="work-desc">Subqueries (Nested Queries) </p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal10">
+        <img src="images/mysqlimg/10.png" class="work-img" alt="Python Project 10">
+        <p class="work-desc">SQL Joins (INNER, LEFT, CROSS)</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal11">
+        <img src="images/mysqlimg/11.png" class="work-img" alt="Python Project 11">
+        <p class="work-desc">Creating and Using Views</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal12">
+        <img src="images/mysqlimg/12.png" class="work-img" alt="Python Project 12">
+        <p class="work-desc">Python MySQL Insert Operation</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal13">
+        <img src="images/mysqlimg/13.png" class="work-img" alt="Python Project 13">
+        <p class="work-desc">Python MySQL JOIN Query Output</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal14">
+        <img src="images/mysqlimg/14.png" class="work-img" alt="Python Project 14">
+        <p class="work-desc">SQL Database and Table Creation</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal15">
+        <img src="images/mysqlimg/15.png" class="work-img" alt="Python Project 15">
+        <p class="work-desc">SQL Constraints and Foreign Keys</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal16">
+        <img src="images/mysqlimg/16.png" class="work-img" alt="Python Project 16">
+        <p class="work-desc">Python Script for Creating MySQL Database</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- image view -->
+
+<div class="modal fade" id="imgModal1" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/1.png" class="modal-img" alt="Python Project 1">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/2.png" class="modal-img" alt="Python Project 2">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/3.png" class="modal-img" alt="Python Project3">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal4" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/4.png" class="modal-img" alt="Python Project 4">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal5" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/5.png" class="modal-img" alt="Python Project 5">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal6" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/6.png" class="modal-img" alt="Python Project 6">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal7" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/7.png" class="modal-img" alt="Python Project 7">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal8" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/8.png" class="modal-img" alt="Python Project 8">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal9" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/9.png" class="modal-img" alt="Python Project 9">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal10" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/10.png" class="modal-img" alt="Python Project 10">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal11" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/11.png" class="modal-img" alt="Python Project 11">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal12" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/12.png" class="modal-img" alt="Python Project 12">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal13" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/13.png" class="modal-img" alt="Python Project 13">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal14" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/14.png" class="modal-img" alt="Python Project 14">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal15" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/15.png" class="modal-img" alt="Python Project 15">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal16" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/mysqlimg/16.png" class="modal-img" alt="Python Project 16">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal2" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content bg-transparent border-0"><img src="images/work2.jpg" class="modal-img" alt="Python Project 2"></div></div></div>
+<div class="modal fade" id="imgModal3" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content bg-transparent border-0"><img src="images/work3.jpg" class="modal-img" alt="Python Project 3"></div></div></div>
+<div class="modal fade" id="imgModal4" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content bg-transparent border-0"><img src="images/work4.jpg" class="modal-img" alt="Python Project 4"></div></div></div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

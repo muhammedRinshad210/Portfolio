@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    
+    /* Navbar Style */
+    .navbar-custom {
+      background-color: #7a8147;
+      animation: slideDown 0.9s ease;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .navbar-nav .nav-link {
+      color: white !important;
+      margin-right: 15px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover { 
+      color: #ffeb99 !important;
+      transform: translateY(-2px);
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .profile:hover {
+      transform: scale(1.05);
+    }
+
+    .profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #fff;
+    }
+
+    .profile-name {
+      font-weight: 500;
+      color: #fff;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+   
+    body {
+      background-color: #cdd2aa80;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .intro-section {
+      height: 60vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: color-change-2x 10s linear infinite alternate both;
+      padding: 0 20px;
+    }
+
+    .intro-section h1 {
+      color: #fff;
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .intro-text {
+      color: #f7f7f7;
+      font-size: 1.2rem;
+      max-width: 750px;
+      line-height: 1.7;
+      animation: fade-in 2s ease-in-out both;
+    }
+
+    @keyframes fade-in {
+      0% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* About Section */
+    .about-section {
+      background-color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about-section h1 {
+      color: #333;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      color: #444;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+    }
+    /* PROJECTS */
+    .projects {
+     background: linear-gradient(135deg, #f9f9f9, #f1f1f1);
+    padding: 100px 0;
+    }
+
+    /* Project Card */
+    .project-card {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    overflow: hidden;
+    background: #ffffff;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.5s ease;
+    }
+
+    .project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(255, 191, 0, 0.3);
+    border-color: rgba(255, 191, 0, 0.5);
+    }
+
+    /* Project Image */
+    .project-card img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.5s ease;
+    }
+
+    .project-card:hover img {
+    transform: scale(1.07);
+    }
+
+   
+    .project-card .card-body {
+    text-align: center;
+    color: #333333;
+    padding: 1.5rem;
+    }
+
+    .project-card .card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #ff6600; 
+    margin-bottom: 0.6rem;
+    }
+
+    .project-card .card-text {
+    color: #444444 !important;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    }
+
+    /* Buttons */
+    .btn-gold {
+    color: #ffffff;
+    background-color: #ff6600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+.btn-gold:hover {
+  background-color: #e65c00;  
+  color: #fff8dc;
+}
+
+
+/*MINI PROJECTS */
+.mini-projects {
+  background: linear-gradient(135deg, #F1F1F1, #F1F1F1);
+  padding: 100px 0;
+}
+
+.mini-project-card {
+  border: 1px solid rgba(255, 191, 0, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.mini-project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(255, 191, 0, 0.25);
+  border-color: rgba(255, 191, 0, 0.5);
+}
+
+.mini-project-card img {
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 191, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.mini-project-card:hover img {
+  transform: scale(1.07);
+}
+
+.mini-project-card .card-body {
+  text-align: center;
+  color: #000;
+  padding: 1rem;
+}
+
+.mini-project-card .card-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #ff6600; 
+  margin-bottom: 0.5rem;
+}
+
+.mini-project-card .card-text {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+
+
+    /* Intro Section */
+  .intro-section {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*  Stack h1 and p vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: color-change-2x 10s linear infinite alternate both;
+    padding: 0 20px;
+  }
+
+  .intro-section h1 {
+    color: #fff;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px; /*  space between h1 and p */
+  }
+
+  .intro-text {
+    color: #f7f7f7;
+    font-size: 1.2rem;
+    max-width: 750px;
+    line-height: 1.7;
+    animation: fade-in 2s ease-in-out both;
+  }
+
+  /*  Animation: Focus In Expand */
+  .focus-in-expand {
+    -webkit-animation: focus-in-expand 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-expand 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  @-webkit-keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  /*  Fade-in animation for intro text */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ /* Certificate Section */
+.certificates {
+  background: linear-gradient(135deg, #fafafa, #eaeaea);
+}
+
+.certificate-card {
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.certificate-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cert-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Modal Image Styling */
+.modal-content {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.modal-body img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+/* Certificates */
+    .certificates {
+      background: linear-gradient(135deg, #fafafa, #eaeaea);
+      padding: 80px 0;
+    }
+    .certificate-card {
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+      background: white;
+    }
+    .certificate-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    .cert-img {
+      height: 220px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .modal-body img {
+      width: 100%;
+      height: 700px;
+      border-radius: 95px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2f2f2f;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+    }
+    footer a { color: #ffeb99; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    .hello{
+      text-align: center;
+      font-style:normal;
+      color: #332550;
+      
+    }
+    .skills-section {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .skills-section h2 {
+      font-weight: 700;
+      color: #ff6600;
+      margin-bottom: 40px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .skills-section h2::after {
+      content: "";
+      display: block;
+      width: 60%;
+      height: 3px;
+      background-color: #ff6600;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .skill-logo {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      background: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-logo:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .intro-section h1,
+    .intro-section p {
+    color: black !important;
+    }
+    
+
+
+
+    
+    
+
+  
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom" id="Home">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fw-bold" href="">PORTFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Certification">Certification</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="minioproject.html">Other Mywork</a></li>
+        </ul>
+
+        <a href="profile.html" class="text-decoration-none" >
+          <div class="profile">
+            <img src="images/img2.png" alt="Profile Picture">
+            <span class="profile-name" >Rinshad</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!--Intro Section -->
+  <div class="intro-section" >
+    <h1 class="focus-in-expand">Hi 👋🏻 I am Muhammed Rinshad</h1>
+    <p class="intro-text">
+      A passionate Python Full Stack Developer skilled in HTML, CSS, Bootstrap, Django, and MongoDB,
+      dedicated to building efficient and user-friendly web applications.
+    </p>
+  </div>
+
+  <!--  About -->
+  <div id="about" class="about-section">
+    <h1>About Me</h1>
+      <p>
+  Hi, I'm <strong>Muhammed Rinshad</strong>, a passionate <strong>Python Full Stack Developer</strong> who loves turning ideas into real-world web solutions.
+</p>
+<p>
+  I completed my <strong>Python Full Stack Development</strong> course at <strong>Sinet Institute, Perinthalmanna</strong>, where I gained strong hands-on experience in both front-end and back-end development.
+</p>
+<p>
+  I hold a <strong>BCA degree</strong> from <strong>Calicut University</strong> and completed my <strong>+2 education</strong> at <strong>NHSS School, Kolathur Kurupathal</strong>. My studies built a solid foundation in programming, logic, and design.
+</p>
+<p>
+  I enjoy building modern, responsive, and efficient web applications using <strong>Python, Django, HTML, CSS, Bootstrap, MySQL,</strong> and <strong>MongoDB</strong>. My focus is always on creating clean, functional, and user-friendly designs.
+</p>
+  </div>
+
+  <!-- Projects -->
+  <section id="project" class="projects">
+    <div class="container">
+      <h2 class="text-center mb-5">🚀 My Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-sm-6">
+          <div class="card project-card">
+            <img src="images/mygimage2.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">MyG website</h5>
+              <p class="card-text">Responsive HTML/CSS MYG storefront with animated</p>
+              <a href="https://rinshad2.github.io/myg/" class="btn btn-gold">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card project-card">
+            <img src="images/sinetimg.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">SINET website</h5>
+              <p class="card-text">Full-stack online store built with Django & Razorpay.</p>
+              <a href="https://rinshad2.github.io/sinet/" class="btn btn-gold">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card project-card">
+            <img src="images/arunimag2.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">arun icecream</h5>
+              <p class="card-text">A productive to-do app using Django REST Framework.</p>
+              <a href="https://muhammedrinshad210.github.io/arunicecream/" class="btn btn-gold">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card project-card">
+            <img src="images/portfolioimg.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">PORTFOLIO</h5>
+              <p class="card-text">Dynamic blogging platform with Django & SQLite.</p>
+              <a href="#" class="btn btn-gold">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Mini Projects-->
+  <section class="mini-projects">
+    <div class="container">
+      <h2 class="text-center mb-5"> Mini Projects</h2>
+      <div class="row g-4">
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card mini-project-card">
+            <img src="https://i.imgur.com/1w7Z2uH.jpg" class="card-img-top" alt="Weather App">
+            <div class="card-body">
+              <h5 class="card-title">Weather App</h5>
+              <p class="card-text">A mini project displaying live weather data using APIs.</p>
+              <a href="#" class="btn btn-gold">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card mini-project-card">
+            <img src="https://i.imgur.com/nZ4xHhG.jpg" class="card-img-top" alt="To-Do List">
+            <div class="card-body">
+              <h5 class="card-title">To-Do List</h5>
+              <p class="card-text">Organize daily tasks efficiently using this simple app.</p>
+              <a href="#" class="btn btn-gold">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card mini-project-card">
+            <img src="https://i.imgur.com/0u5B6cR.jpg" class="card-img-top" alt="Expense Tracker">
+            <div class="card-body">
+              <h5 class="card-title">Expense Tracker</h5>
+              <p class="card-text">Track your expenses and manage budget smartly.</p>
+              <a href="#" class="btn btn-gold">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card mini-project-card">
+            <img src="https://i.imgur.com/aD2Z5Ax.jpg" class="card-img-top" alt="Quiz App">
+            <div class="card-body">
+              <h5 class="card-title">Quiz App</h5>
+              <p class="card-text">An interactive quiz app to test your knowledge.</p>
+              <a href="#" class="btn btn-gold">View</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+<!--- Certificates Section -->
+<section id="Certification" class="certificates">
+  <div class="container">
+    <h2 class="text-center mb-5"> My Certificates</h2>
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-6">
+        <div class="card certificate-card" data-bs-toggle="modal" data-bs-target="#certModal1">
+          <img src="images/certificate.png" class="cert-img" alt="Certificate 1">
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card certificate-card" data-bs-toggle="modal" data-bs-target="#certModal2">
+          <img src="images/certificate.png" class="cert-img" alt="Certificate 2">
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card certificate-card" data-bs-toggle="modal" data-bs-target="#certModal3">
+          <img src="{% static 'hello/images/cert3.png' %}" class="cert-img" alt="Certificate 3">
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card certificate-card" data-bs-toggle="modal" data-bs-target="#certModal4">
+          <img src="{% static 'hello/images/cert4.png' %}" class="cert-img" alt="Certificate 4">
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card certificate-card" data-bs-toggle="modal" data-bs-target="#certModal5">
+          <img src="{% static 'hello/images/cert5.png' %}" class="cert-img" alt="Certificate 5">
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card certificate-card" data-bs-toggle="modal" data-bs-target="#certModal6">
+          <img src="{% static 'hello/images/cert6.png' %}" class="cert-img" alt="Certificate 6">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  Certificate Modals) -->
+<div class="modal fade" id="certModal1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-dark position-relative">
+      
+      <div class="modal-body p-0 text-center">
+        <img src="images/certificate.png" alt="Certificate 1" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="certModal2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-dark position-relative">
+     
+      <div class="modal-body p-0 text-center">
+        <img src="images/certificate.png" alt="Certificate 2" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="certModal3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-dark position-relative">
+ 
+      <div class="modal-body p-0 text-center">
+        <img src="{% static 'hello/images/cert3.png' %}" alt="Certificate 3" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="certModal4" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-dark position-relative">
+  
+      <div class="modal-body p-0 text-center">
+        <img src="{% static 'hello/images/cert4.png' %}" alt="Certificate 4" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="certModal5" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-dark position-relative">
+
+      <div class="modal-body p-0 text-center">
+        <img src="{% static 'hello/images/cert5.png' %}" alt="Certificate 5" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="certModal6" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-dark position-relative">
+ 
+      <div class="modal-body p-0 text-center">
+        <img src="{% static 'hello/images/cert6.png' %}" alt="Certificate 6" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <section id="Skills" class="skills-section">
+    <div class="container">
+      <h2>MY SKILLS</h2>
+      <div class="row justify-content-center g-4 mt-4">
+
+        <!-- Row 1 -->
+         <div class="col-6 col-md-3">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" alt="Python" class="skill-logo">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML5" class="skill-logo">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS3" class="skill-logo">
+        </div> 
+        <div class="col-6 col-md-3">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" alt="Bootstrap" class="skill-logo">
+        </div>
+        
+         
+
+
+       
+       
+
+        <!-- Row 2 --> 
+         <div class="col-6 col-md-3">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" class="skill-logo">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="Mysql" class="skill-logo">
+        </div>
+       
+        <div class="col-6 col-md-3">
+         
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg" alt="Django" class="skill-logo">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" alt="GitHub" class="skill-logo">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--  Footer -->
+<footer>
+    © 2025 <strong>Muhammed Rinshad</strong> | Python Full Stack Developer <br>
+    📞 <a href="tel:+917356742758">+91 7356742758</a> | ✉️ <a href="mailto:m.rinshad210@gmail.com">m.rinshad210@gmail.com</a>
+</footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Python Works</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f8f9fa;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .work-section {
+      padding: 60px 0;
+    }
+
+    .work-card {
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .work-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .work-img {
+      border-radius: 10px;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .work-desc {
+      text-align: center;
+      font-size: 15px;
+      margin-top: 8px;
+      color: #333;
+    }
+
+    .modal-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container work-section">
+  <h2 class="text-center mb-5">My Python Works</h2>
+
+  <div class="row g-4">
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal1">
+        <img src="images/djangoimg/1.png" class="work-img" alt="Python Project 1">
+        <p class="work-desc">Hello Page</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal2">
+        <img src="images/djangoimg/2.png" class="work-img" alt="Python Project 2">
+        <p class="work-desc">Django Main Project Page</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal3">
+        <img src="images/djangoimg/3.png" class="work-img" alt="Python Project 3">
+        <p class="work-desc">First Application Output</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal4">
+        <img src="images/djangoimg/4.png" class="work-img" alt="Python Project 4">
+        <p class="work-desc">Fibonacci Calculator</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal5">
+        <img src="images/djangoimg/5.png" class="work-img" alt="Python Project 5">
+        <p class="work-desc">Factorial Calculator</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal6">
+        <img src="images/djangoimg/6.png" class="work-img" alt="Python Project 6">
+        <p class="work-desc">Largest of Three Numbers</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal7">
+        <img src="images/djangoimg/7.png" class="work-img" alt="Python Project 7">
+        <p class="work-desc">Largest of Two Numbers</p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card work-card" data-bs-toggle="modal" data-bs-target="#imgModal8">
+        <img src="images/djangoimg/8.png" class="work-img" alt="Python Project 8">
+        <p class="work-desc">Addition Calculator</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- image view -->
+
+<div class="modal fade" id="imgModal1" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/djangoimg/1.png" class="modal-img" alt="Python Project 1">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/djangoimg/2.png" class="modal-img" alt="Python Project 2">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/djangoimg/3.png" class="modal-img" alt="Python Project3">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal4" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/djangoimg/4.png" class="modal-img" alt="Python Project 4">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal5" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/djangoimg/5.png" class="modal-img" alt="Python Project 5">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal6" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/djangoimg/6.png" class="modal-img" alt="Python Project 6">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal7" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/djangoimg/7.png" class="modal-img" alt="Python Project 7">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imgModal8" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img src="images/djangoimg/8.png" class="modal-img" alt="Python Project 8">
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="imgModal2" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content bg-transparent border-0"><img src="images/work2.jpg" class="modal-img" alt="Python Project 2"></div></div></div>
+<div class="modal fade" id="imgModal3" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content bg-transparent border-0"><img src="images/work3.jpg" class="modal-img" alt="Python Project 3"></div></div></div>
+<div class="modal fade" id="imgModal4" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content bg-transparent border-0"><img src="images/work4.jpg" class="modal-img" alt="Python Project 4"></div></div></div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
