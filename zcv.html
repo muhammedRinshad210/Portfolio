@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Muhammed Rinshad P</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #2980b9;
+            --text-color: #333;
+            --light-gray: #f4f4f4;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: #fff;
+        }
+        /* Header Section */
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .contact-info {
+            font-size: 0.95em;
+            color: #555;
+        }
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 10px;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        
+        /* Professional Summary */
+        .summary {
+            text-align: justify;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .skill-category {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        /* Experience/Projects/Education Items */
+        .item {
+            margin-bottom: 15px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .item-sub {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Print Optimization */
+        @media print {
+            body {
+                padding: 0;
+                max-width: 100%;
+            }
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+            @page {
+                margin: 1cm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Muhammed Rinshad P</h1>
+        <span class="subtitle">Full Stack Developer</span>
+        <div class="contact-info">
+            Parappil House, Kolathur Post, Malappuram, Kerala 679338<br>
+            +91 7356742758 | <a href="mailto:m.rinshad210@gmail.com">m.rinshad210@gmail.com</a><br>
+            Portfolio: <a href="https://your-portfolio-link-here.com">your-portfolio-link-here.com</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p class="summary">
+            Passionate BCA graduate specializing in Python, Django, and full-stack web development. Experienced in creating responsive, dynamic web applications and eager to contribute to a professional software team. Highly skilled in frontend and backend technologies with a focus on problem-solving and continuous learning.
+        </p>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div><span class="skill-category">Frontend:</span> HTML, CSS, Bootstrap, JavaScript</div>
+            <div><span class="skill-category">Backend:</span> Python, Django Framework</div>
+            <div><span class="skill-category">Databases:</span> MySQL, MongoDB</div>
+            <div><span class="skill-category">Tools:</span> Git, GitHub</div>
+            <div><span class="skill-category">Soft Skills:</span> Teamwork, Problem Solving</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Professional Training</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>Python Full Stack Development</span>
+                <span>May 2025 – Nov 2025</span>
+            </div>
+            <div class="item-sub">Sinet Institute, Malappuram</div>
+            <ul>
+                <li>Completed intensive training in full-stack web development technologies.</li>
+                <li>Gained hands-on experience in building web applications using Django and Python.</li>
+                <li>Learned database integration with MySQL and MongoDB.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Key Projects</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>E-Commerce Platform (Placeholder)</span>
+            </div>
+            <div class="item-sub">Technologies: Django, Python, MySQL</div>
+            <ul>
+                <li>Developed a fully functional e-commerce web application with user authentication.</li>
+                <li>Implemented product listing, cart functionality, and database management.</li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <span>Personal Portfolio Website</span>
+            </div>
+            <div class="item-sub">Technologies: HTML, CSS, Bootstrap</div>
+            <ul>
+                <li>Designed a responsive portfolio to showcase projects and certifications.</li>
+                <li>Focused on clean UI/UX design principles using Bootstrap.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>Bachelor of Computer Applications (BCA)</span>
+                <span>2022 – 2025</span>
+            </div>
+            <div class="item-sub">University of Calicut - Nasra Arts and Science College, Tirurkad</div>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <span>Higher Secondary Education</span>
+                <span>2020 – 2022</span>
+            </div>
+            <div class="item-sub">NHSS Kolathur, DHSE Kerala</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Languages</h2>
+        <div class="skills-grid">
+            <div><span class="skill-category">Malayalam</span></div>
+            <div><span class="skill-category">English</span> </div>
+        </div>
+    </section>
+
+</body>
+</html>

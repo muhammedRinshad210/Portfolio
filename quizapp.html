@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Questions Quiz (No JS)</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #eef2ff;
+            padding: 40px 0;
+        }
+        .quiz-box {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .answer {
+            display: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .toggle input[type="checkbox"] {
+            display: none;
+        }
+
+        .toggle input[type="checkbox"]:checked ~ .answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-box">
+    <h3 class="text-center mb-4">10 Questions Quiz</h3>
+
+    <!-- Q1 -->
+    <div class="mb-4">
+        <h5>1. What is the capital of India?</h5>
+        <div class="form-check ms-3">
+            <input type="radio" name="q1" class="form-check-input">
+            <label class="form-check-label">Mumbai</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q1" class="form-check-input">
+            <label class="form-check-label">Chennai</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q1" class="form-check-input">
+            <label class="form-check-label">Kolkata</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q1" class="form-check-input">
+            <label class="form-check-label">New Delhi</label>
+        </div>
+        <label class="toggle mt-2 d-inline-block">
+            <input type="checkbox">
+            <span class="btn btn-outline-primary btn-sm">Show Answer</span>
+            <div class="answer text-success">✔ Correct: New Delhi</div>
+        </label>
+    </div>
+
+    <hr>
+
+    <!-- Q2 -->
+    <div class="mb-4">
+        <h5>2. Which planet is called the Red Planet?</h5>
+        <div class="form-check ms-3">
+            <input type="radio" name="q2" class="form-check-input">
+            <label class="form-check-label">Earth</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q2" class="form-check-input">
+            <label class="form-check-label">Mars</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q2" class="form-check-input">
+            <label class="form-check-label">Jupiter</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q2" class="form-check-input">
+            <label class="form-check-label">Venus</label>
+        </div>
+        <label class="toggle mt-2 d-inline-block">
+            <input type="checkbox">
+            <span class="btn btn-outline-primary btn-sm">Show Answer</span>
+            <div class="answer text-success">✔ Correct: Mars</div>
+        </label>
+    </div>
+
+    <hr>
+
+    <!-- Q3 -->
+    <div class="mb-4">
+        <h5>3. HTML stands for:</h5>
+        <div class="form-check ms-3">
+            <input type="radio" name="q3" class="form-check-input">
+            <label class="form-check-label">Hyper Trainer Marking Language</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q3" class="form-check-input">
+            <label class="form-check-label">Hyper Text Markup Language</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q3" class="form-check-input">
+            <label class="form-check-label">High Text Markdown Language</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q3" class="form-check-input">
+            <label class="form-check-label">Hyper Text Modern Language</label>
+        </div>
+        <label class="toggle mt-2 d-inline-block">
+            <input type="checkbox">
+            <span class="btn btn-outline-primary btn-sm">Show Answer</span>
+            <div class="answer text-success">✔ Correct: Hyper Text Markup Language</div>
+        </label>
+    </div>
+
+    <hr>
+
+    <!-- Q4 -->
+    <div class="mb-4">
+        <h5>4. Which is the largest ocean?</h5>
+        <div class="form-check ms-3">
+            <input type="radio" name="q4" class="form-check-input">
+            <label class="form-check-label">Indian Ocean</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q4" class="form-check-input">
+            <label class="form-check-label">Atlantic Ocean</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q4" class="form-check-input">
+            <label class="form-check-label">Pacific Ocean</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q4" class="form-check-input">
+            <label class="form-check-label">Arctic Ocean</label>
+        </div>
+        <label class="toggle mt-2 d-inline-block">
+            <input type="checkbox">
+            <span class="btn btn-outline-primary btn-sm">Show Answer</span>
+            <div class="answer text-success">✔ Correct: Pacific Ocean</div>
+        </label>
+    </div>
+
+    <hr>
+
+    <!-- Q5 -->
+    <div class="mb-4">
+        <h5>5. Who discovered gravity?</h5>
+        <div class="form-check ms-3">
+            <input type="radio" name="q5" class="form-check-input">
+            <label class="form-check-label">Albert Einstein</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q5" class="form-check-input">
+            <label class="form-check-label">Galileo Galilei</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q5" class="form-check-input">
+            <label class="form-check-label">Isaac Newton</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q5" class="form-check-input">
+            <label class="form-check-label">Nicolas Tesla</label>
+        </div>
+        <label class="toggle mt-2 d-inline-block">
+            <input type="checkbox">
+            <span class="btn btn-outline-primary btn-sm">Show Answer</span>
+            <div class="answer text-success">✔ Correct: Isaac Newton</div>
+        </label>
+    </div>
+
+    <hr>
+
+    <!-- Q6 -->
+    <div class="mb-4">
+        <h5>6. What is 5 + 7?</h5>
+        <div class="form-check ms-3">
+            <input type="radio" name="q6" class="form-check-input">
+            <label class="form-check-label">10</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q6" class="form-check-input">
+            <label class="form-check-label">11</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q6" class="form-check-input">
+            <label class="form-check-label">12</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q6" class="form-check-input">
+            <label class="form-check-label">13</label>
+        </div>
+        <label class="toggle mt-2 d-inline-block">
+            <input type="checkbox">
+            <span class="btn btn-outline-primary btn-sm">Show Answer</span>
+            <div class="answer text-success">✔ Correct: 12</div>
+        </label>
+    </div>
+
+    <hr>
+
+    <!-- Q7 -->
+    <div class="mb-4">
+        <h5>7. Which gas do plants release during photosynthesis?</h5>
+        <div class="form-check ms-3">
+            <input type="radio" name="q7" class="form-check-input">
+            <label class="form-check-label">Carbon dioxide</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q7" class="form-check-input">
+            <label class="form-check-label">Oxygen</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q7" class="form-check-input">
+            <label class="form-check-label">Nitrogen</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q7" class="form-check-input">
+            <label class="form-check-label">Hydrogen</label>
+        </div>
+        <label class="toggle mt-2 d-inline-block">
+            <input type="checkbox">
+            <span class="btn btn-outline-primary btn-sm">Show Answer</span>
+            <div class="answer text-success">✔ Correct: Oxygen</div>
+        </label>
+    </div>
+
+    <hr>
+
+    <!-- Q8 -->
+    <div class="mb-4">
+        <h5>8. Which animal is known as the King of the Jungle?</h5>
+        <div class="form-check ms-3">
+            <input type="radio" name="q8" class="form-check-input">
+            <label class="form-check-label">Tiger</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q8" class="form-check-input">
+            <label class="form-check-label">Lion</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q8" class="form-check-input">
+            <label class="form-check-label">Elephant</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q8" class="form-check-input">
+            <label class="form-check-label">Leopard</label>
+        </div>
+        <label class="toggle mt-2 d-inline-block">
+            <input type="checkbox">
+            <span class="btn btn-outline-primary btn-sm">Show Answer</span>
+            <div class="answer text-success">✔ Correct: Lion</div>
+        </label>
+    </div>
+
+    <hr>
+
+    <!-- Q9 -->
+    <div class="mb-4">
+        <h5>9. What is the boiling point of water?</h5>
+        <div class="form-check ms-3">
+            <input type="radio" name="q9" class="form-check-input">
+            <label class="form-check-label">50°C</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q9" class="form-check-input">
+            <label class="form-check-label">75°C</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q9" class="form-check-input">
+            <label class="form-check-label">90°C</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q9" class="form-check-input">
+            <label class="form-check-label">100°C</label>
+        </div>
+        <label class="toggle mt-2 d-inline-block">
+            <input type="checkbox">
+            <span class="btn btn-outline-primary btn-sm">Show Answer</span>
+            <div class="answer text-success">✔ Correct: 100°C</div>
+        </label>
+    </div>
+
+    <hr>
+
+    <!-- Q10 -->
+    <div class="mb-4">
+        <h5>10. Which country invented pizza?</h5>
+        <div class="form-check ms-3">
+            <input type="radio" name="q10" class="form-check-input">
+            <label class="form-check-label">USA</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q10" class="form-check-input">
+            <label class="form-check-label">France</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q10" class="form-check-input">
+            <label class="form-check-label">Italy</label>
+        </div>
+        <div class="form-check ms-3">
+            <input type="radio" name="q10" class="form-check-input">
+            <label class="form-check-label">Germany</label>
+        </div>
+        <label class="toggle mt-2 d-inline-block">
+            <input type="checkbox">
+            <span class="btn btn-outline-primary btn-sm">Show Answer</span>
+            <div class="answer text-success">✔ Correct: Italy</div>
+        </label>
+    </div>
+
+</div>
+
+</body>
+</html>
