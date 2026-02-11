@@ -13,7 +13,7 @@
     
     /* Navbar Style */
     .navbar-custom {
-      background-color: #7a8147;
+      background-color: #1e3a8a;
       animation: slideDown 0.9s ease;
       padding-top: 15px;
       padding-bottom: 15px;
@@ -21,13 +21,13 @@
     }
     
     .navbar-nav .nav-link {
-      color: white !important;
+      color: #ffffff !important;
       margin-right: 15px;
       transition: color 0.3s ease, transform 0.3s ease;
     }
 
     .navbar-nav .nav-link:hover { 
-      color: #ffeb99 !important;
+      color: #93c5fd !important;
       transform: translateY(-2px);
     }
 
@@ -61,8 +61,10 @@
     }
 
     body {
-      background-color: #f9f9f9;
-      font-family: 'Poppins', sans-serif;
+      background-color: #f8fafc;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
     }
 
     .container {
@@ -74,36 +76,33 @@
       to { opacity: 1; transform: translateY(0); }
     }
    
-    body {
-      background-color: #cdd2aa80;
-      font-family: "Poppins", sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+    
 
     .intro-section {
-      height: 60vh;
+      height: 80vh;
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      animation: color-change-2x 10s linear infinite alternate both;
+      
       padding: 0 20px;
+      background: linear-gradient(135deg, #476dd3, #5787ee);
     }
 
     .intro-section h1 {
-      color: #fff;
+      color: #ffffff;
       font-size: 2.8rem;
       letter-spacing: 1px;
       margin-bottom: 15px;
+      
     }
 
     .intro-text {
-      color: #f7f7f7;
+      color: #ffffff;
       font-size: 1.2rem;
-      max-width: 750px;
+      max-width: 100%;
       line-height: 1.7;
       animation: fade-in 2s ease-in-out both;
     }
@@ -115,7 +114,7 @@
 
     /* About Section */
     .about-section {
-      background-color:rgb(244, 244, 244);
+      background-color: #ffffff;
       padding: 60px 20px;
       text-align: center;
     }
@@ -135,33 +134,36 @@
     }
     /* PROJECTS */
     .projects {
-     background: rgb(244, 244, 244);
+    background-color: #ffffff;
     padding: 100px 0;
     }
 
     /* Project Card */
     .project-card {
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 15px rgba(30, 58, 138, 0.1);
     border-radius: 18px;
     overflow: hidden;
     background: #ffffff;
     backdrop-filter: blur(8px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+     
     transition: all 0.5s ease;
     }
 
     .project-card:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 10px 25px rgba(255, 191, 0, 0.3);
-    border-color: rgba(255, 191, 0, 0.5);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+    border-color: #2563eb;
+     
     }
 
     /* Project Image */
     .project-card img {
-    height: 220px;
+    aspect-ratio: 16/9;
+    height: auto;
     width: 100%;
     object-fit: cover;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(205, 30, 30, 0.05);
     transition: transform 0.5s ease;
     }
 
@@ -179,7 +181,7 @@
     .project-card .card-title {
     font-weight: 600;
     font-size: 1.25rem;
-    color: #ff6600; 
+    color: #1e3a8a; 
     margin-bottom: 0.6rem;
     }
 
@@ -192,7 +194,7 @@
     /* Buttons */
     .btn-gold {
     color: #ffffff;
-    background-color: #ff6600;
+    background-color: #2563eb;
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
@@ -201,13 +203,13 @@
     }
 
     .btn-gold:hover {
-    background-color: #e65c00;  
+    background-color: #2d5bbd;  
     color: #fff8dc;
     }
   
   /*MINI PROJECTS */
   .mini-projects {
-  background: rgb(244, 244, 244);
+  background-color: #ffffff;
   padding: 100px 0;
   }
 
@@ -221,8 +223,8 @@
 
   .mini-project-card:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 8px 25px rgba(255, 191, 0, 0.25);
-  border-color: rgba(255, 191, 0, 0.5);
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+  border-color: #2563eb;
   }
 
   .mini-project-card img {
@@ -259,83 +261,10 @@
 
 
 
-    /* Intro Section */
-  .intro-section {
-    height: 60vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column; /*  Stack h1 and p vertically */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    animation: color-change-2x 10s linear infinite alternate both;
-    padding: 0 20px;
-  }
-
-  .intro-section h1 {
-    color: #fff;
-    font-size: 2.8rem;
-    letter-spacing: 1px;
-    margin-bottom: 15px; /*  space between h1 and p */
-  }
-
-  .intro-text {
-    color: #f7f7f7;
-    font-size: 1.2rem;
-    max-width: 750px;
-    line-height: 1.7;
-    animation: fade-in 2s ease-in-out both;
-  }
-
-  /*  Animation: Focus In Expand */
-  .focus-in-expand {
-    -webkit-animation: focus-in-expand 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: focus-in-expand 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  }
-
-  @-webkit-keyframes focus-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-filter: blur(12px);
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-      filter: blur(0px);
-      opacity: 1;
-    }
-  }
-
-  @keyframes focus-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      -webkit-filter: blur(12px);
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-      filter: blur(0px);
-      opacity: 1;
-    }
-  }
-
-  /*  Fade-in animation for intro text */
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
+  
     /* Certificates */
     .certificates {
-      background: rgb(244, 244, 244);
+      background-color: #ffffff;
       padding: 80px 0;
     }
     .certificate-card {
@@ -350,28 +279,32 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
     .cert-img {
-      height: 220px;
+      height: 250px;
       width: 100%;
       object-fit: cover;
       border-radius: 10px;
     }
     .modal-body img {
       width: 100%;
-      height: 600px;
+      height: 100%;
       border-radius: 95px;
     }
 
     /* Footer */
     footer {
-      background-color: #2f2f2f;
+      background-color: #0f172a;
       color: white;
       text-align: center;
       padding: 20px 10px;
       font-size: 15px;
       letter-spacing: 0.5px;
     }
-    footer a { color: #ffeb99; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
+    footer a {
+       color: #93c5fd;; text-decoration: none; 
+      }
+    footer a:hover {
+       text-decoration: underline; 
+      }
 
     .hello{
       text-align: center;
@@ -388,7 +321,8 @@
 
     .skills-section h2 {
       font-weight: 700;
-      color: #ff6600;
+      color: #1e3a8a;
+      background-color: rgb(248, 250, 252);
       margin-bottom: 40px;
       position: relative;
       display: inline-block;
@@ -399,7 +333,8 @@
       display: block;
       width: 60%;
       height: 3px;
-      background-color: #ff6600;
+      color: #1e3a8a;
+      background-color: #1e3a8a;
       margin: 10px auto 0;
       border-radius: 2px;
     }
@@ -419,11 +354,11 @@
       transform: translateY(-5px);
       box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     }
-    .intro-section h1,
-    .intro-section p {
-    color: black !important;
-    }
-    
+/* @keyframes color-change-2x {
+  0% { background: #7a8147; }
+  100% { background: #f5f5f5; }
+} */
+
 
 
   </style>
@@ -462,9 +397,9 @@
 
   <!--Intro Section -->
   <div class="intro-section" >
-    <h1 class="focus-in-expand">Hi 👋🏻 I am Muhammed Rinshad</h1>
+    <h1 class="focus-in-expand">Hi, I’m Muhammed Rinshad</h1>
     <p class="intro-text">
-      A passionate Python Full Stack Developer skilled in Python, HTML, CSS, Bootstrap, MySQL, MongoDB and Django dedicated to building efficient and user-friendly web applications.
+      A passionate Python Full Stack Developer skilled in Python, HTML, CSS, Bootstrap,<br> MySQL, MongoDB and Django dedicated to building efficient and user-friendly web applications.
     </p>
   </div>
 
@@ -473,28 +408,34 @@
     <h1>About Me</h1>
 
     <p>
-        I'm <strong>Muhammad Rinshad</strong>, a committed <strong>Python Full Stack Developer</strong> who is passionate about turning concepts into useful web solutions.
+        I’m <strong>Muhammad Rinshad</strong>, a dedicated <strong>Python Full Stack Developer</strong> passionate about transforming ideas into practical and scalable web solutions.
     </p>
 
     <p>
-        I successfully completed my <strong>Python Full Stack Development</strong> course at <strong>Sinet Institute, Perinthalmanna</strong>, where I gained extensive practical experience in both front-end and back-end development.
+        I completed my <strong>Python Full Stack Development</strong> course at 
+        <strong>Sinet Institute, Perinthalmanna</strong>, where I gained strong hands-on experience in both front-end and back-end development.
     </p>
 
     <p>
-        I finished my pre-university education at <strong>NHSS School, Kolathur Kurupathal</strong> and hold a <strong>Bachelor of Computer Applications (BCA)</strong> degree from <strong>Calicut University</strong>. These academic experiences gave me a strong foundation in logic, programming, and software design.
+        I hold a <strong>Bachelor of Computer Applications (BCA)</strong> degree from 
+        <strong>Calicut University</strong> and completed my pre-university education at 
+        <strong>NHSS School, Kolathur Kurupathal</strong>. My academic background has given me a solid foundation in programming logic, software design, and problem-solving.
     </p>
 
     <p>
-        Using <strong>Python, Django, HTML, CSS, Bootstrap, MySQL,</strong> and <strong>MongoDB</strong>, I specialize in creating cutting-edge, responsive, and effective web applications. My main goal is to design interfaces that are clear, practical, and user-friendly.
+        I specialize in building <strong>responsive, efficient, and user-friendly</strong> web applications using 
+        <strong>Python, Django, HTML, CSS, Bootstrap, MySQL,</strong> and <strong>MongoDB</strong>. 
+        My focus is on creating clean interfaces and reliable functionality that deliver real value to users.
     </p>
 </div>
+
 
 
 
   <!-- Projects -->
   <section id="project" class="projects">
     <div class="container">
-      <h2 class="text-center mb-5">🚀 My Projects</h2>
+      <h2 class="text-center mb-5">My Projects</h2>
       <div class="row g-4">
         <div class="col-md-3 col-sm-6">
           <div class="card project-card">
@@ -550,8 +491,8 @@
           <div class="card mini-project-card">
             <img src="images/ecommerceimaghes.png" class="card-img-top" alt="Weather App">
             <div class="card-body">
-              <h5 class="card-title">Weather App</h5>
-              <p class="card-text">Simple weather checker<br>using HTML, CSS, Bootstrap.</p>
+              <h5 class="card-title">E commerce</h5>
+              <p class="card-text">Simple product purchasing<br>using HTML, CSS, Bootstrap.</p>
               <a href="productcard.html" class="btn btn-gold">View</a>
             </div>
           </div>
@@ -601,19 +542,19 @@
     <div class="row g-4">
       <div class="col-md-4 col-sm-6">
         <div class="card certificate-card" data-bs-toggle="modal" data-bs-target="#certModal1">
-          <img src="images/certificate.png" class="cert-img" alt="Certificate 1">
+          <img src="images/certificate/calicut univercity.png" class="cert-img" alt="Certificate 1">
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="card certificate-card" data-bs-toggle="modal" data-bs-target="#certModal2">
-          <img src="images/certificate.png" class="cert-img" alt="Certificate 2">
+          <img src="images/certificate/certificate of sinet.png" class="cert-img" alt="Certificate 2">
         </div>
       </div>
-      <!-- <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-6">
         <div class="card certificate-card" data-bs-toggle="modal" data-bs-target="#certModal3">
-          <img src="{% static 'hello/images/cert3.png' %}" class="cert-img" alt="Certificate 3">
+          <img src="images/certificate/certificate.png" class="cert-img" alt="Certificate 3">
         </div>
-      </div> -->
+      </div>
       <!-- <div class="col-md-4 col-sm-6">
         <div class="card certificate-card" data-bs-toggle="modal" data-bs-target="#certModal4">
           <img src="{% static 'hello/images/cert4.png' %}" class="cert-img" alt="Certificate 4">
@@ -639,7 +580,7 @@
     <div class="modal-content bg-dark position-relative">
       
       <div class="modal-body p-0 text-center">
-        <img src="images/certificate.png" alt="Certificate 1" class="img-fluid rounded">
+        <img src="images/certificate/calicut univercity.png" alt="Certificate 1" class="img-fluid rounded">
       </div>
     </div>
   </div>
@@ -650,7 +591,7 @@
     <div class="modal-content bg-dark position-relative">
      
       <div class="modal-body p-0 text-center">
-        <img src="images/certificate.png" alt="Certificate 2" class="img-fluid rounded">
+        <img src="images/certificate/certificate of sinet.png" alt="Certificate 2" class="img-fluid rounded">
       </div>
     </div>
   </div>
@@ -661,7 +602,7 @@
     <div class="modal-content bg-dark position-relative">
  
       <div class="modal-body p-0 text-center">
-        <img src="{% static 'hello/images/cert3.png' %}" alt="Certificate 3" class="img-fluid rounded">
+        <img src="images/certificate/certificate.png" alt="Certificate 3" class="img-fluid rounded">
       </div>
     </div>
   </div>
